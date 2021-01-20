@@ -1,3 +1,3 @@
 ﻿  Offer03.cpp
-c:\users\surplus\desktop\临时\c++demo\剑指offer第二版\offeredition2\offer03\offer03.cpp(50): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+c:\users\surplus\desktop\临时\c++demo\剑指offer第二版\offeredition2\offer03\offer03.cpp(57): warning C4018: “<”: 有符号/无符号不匹配
   Offer03.vcxproj -> C:\Users\Surplus\Desktop\临时\c++demo\剑指offer第二版\OfferEdition2\Debug\Offer03.exe
