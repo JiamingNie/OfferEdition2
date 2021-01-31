@@ -1,0 +1,11 @@
+﻿  Offer12.cpp
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\offer12\offer12.cpp(38): warning C4018: “>=”: 有符号/无符号不匹配
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\offer12\offer12.cpp(48): warning C4305: “=”: 从“int”到“_Ty”截断
+          with
+          [
+              _Ty=char
+          ]
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\offer12\offer12.cpp(48): warning C4309: “=”: 截断常量值
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\offer12\offer12.cpp(61): warning C4018: “<”: 有符号/无符号不匹配
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\offer12\offer12.cpp(63): warning C4018: “<”: 有符号/无符号不匹配
+  Offer12.vcxproj -> E:\Personal\Code\CPP\c++demo\剑指offer第二版\OfferEdition2\Debug\Offer12.exe
