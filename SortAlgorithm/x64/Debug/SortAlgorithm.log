@@ -1,0 +1,6 @@
+﻿  SortAlgorithm.cpp
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\sortalgorithm\sortalgorithm.cpp(44): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\sortalgorithm\sortalgorithm.cpp(103): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\sortalgorithm\sortalgorithm.cpp(110): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\sortalgorithm\sortalgorithm.cpp(152): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  SortAlgorithm.vcxproj -> E:\Personal\Code\CPP\c++demo\剑指offer第二版\OfferEdition2\x64\Debug\SortAlgorithm.exe

@@ -32,42 +32,82 @@
 #include<string>
 using namespace std;
 
-//回溯法
-bool backTracking(vector<vector<char>>& board, string word, int startRow, int startCol, int index)
+////回溯法
+//bool backTracking(vector<vector<char>>& board, string word, int startRow, int startCol, int index)
+//{
+//	if (startRow < 0 || startRow >= board.size() || startCol < 0 || startCol >= board[0].size() || board[startRow][startCol] != word[index])
+//	{
+//		return false;
+//	}
+//	else if (index == word.size() - 1)
+//	{
+//		return true;
+//	}
+//	index++;
+//	int temp = board[startRow][startCol];//记录访问过的元素用于回溯
+//	board[startRow][startCol] = '/0';//用/0代表已经访问过
+//	if (backTracking(board, word, startRow - 1, startCol, index)|| backTracking(board, word, startRow + 1, startCol, index)|| 
+//		backTracking(board, word, startRow, startCol - 1, index)|| backTracking(board, word, startRow, startCol + 1, index))
+//	{
+//		return true;//如果有一条路径满足就返回true
+//	}
+//	index--;
+//	board[startRow][startCol] = temp;//回溯
+//	return false;
+//
+//}
+//
+//bool exist(vector<vector<char>>& board, string word) {
+//	for (int i = 0; i < board.size(); i++)
+//	{
+//		for (int j = 0; j < board[i].size(); j++)
+//		{
+//			if (backTracking(board, word, i, j, 0))
+//				return true;
+//		}
+//	}
+//	return false;
+//}
+
+//二刷
+bool backTracking(vector<vector<char>>& board, string word, vector<vector<bool>>& isVisit, int startRow, int startCol, int index)
 {
-	if (startRow < 0 || startRow >= board.size() || startCol < 0 || startCol >= board[0].size() || board[startRow][startCol] != word[index])
+	if (startRow < 0 || startRow >= board.size() || startCol < 0 || startCol >= board[0].size() || board[startRow][startCol] != word[index]||isVisit[startRow][startCol])
 	{
 		return false;
 	}
-	else if (index == word.size() - 1)
+	else if (index == word.size()-1)
 	{
 		return true;
 	}
+	isVisit[startRow][startCol] = true;
 	index++;
-	int temp = board[startRow][startCol];//记录访问过的元素用于回溯
-	board[startRow][startCol] = '/0';//用/0代表已经访问过
-	if (backTracking(board, word, startRow - 1, startCol, index)|| backTracking(board, word, startRow + 1, startCol, index)|| 
-		backTracking(board, word, startRow, startCol - 1, index)|| backTracking(board, word, startRow, startCol + 1, index))
+	if (backTracking(board, word, isVisit, startRow + 1, startCol, index) || backTracking(board, word, isVisit, startRow - 1, startCol, index) || 
+		backTracking(board, word, isVisit, startRow, startCol + 1, index) || backTracking(board, word, isVisit, startRow, startCol - 1, index))
 	{
-		return true;//如果有一条路径满足就返回true
+		return true;
 	}
 	index--;
-	board[startRow][startCol] = temp;//回溯
+	isVisit[startRow][startCol] = false;
 	return false;
-
 }
 
 bool exist(vector<vector<char>>& board, string word) {
+	vector<vector<bool>> isVisit(board.size(), vector<bool>(board[0].size(), false));
 	for (int i = 0; i < board.size(); i++)
 	{
-		for (int j = 0; j < board[i].size(); j++)
+		for (int j = 0; j < board[0].size(); j++)
 		{
-			if (backTracking(board, word, i, j, 0))
+			if (backTracking(board, word, isVisit, i, j, 0))
+			{
 				return true;
+			}
 		}
 	}
 	return false;
 }
+
+
 
 
 int main()
@@ -76,7 +116,7 @@ int main()
 								{'s', 'f', 'c', 's'},
 								{'a', 'd', 'e', 'e'} };
 
-	if (exist(board,"bfcee"))
+	if (exist(board,"abcced"))
 	{
 		cout << "存在该字符串" << endl;
 	}

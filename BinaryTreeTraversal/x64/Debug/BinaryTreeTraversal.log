@@ -1,0 +1,3 @@
+﻿  binaryTreeTraversal.cpp
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\binarytreetraversal\binarytreetraversal.cpp(160): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  BinaryTreeTraversal.vcxproj -> E:\Personal\Code\CPP\c++demo\剑指offer第二版\OfferEdition2\x64\Debug\BinaryTreeTraversal.exe

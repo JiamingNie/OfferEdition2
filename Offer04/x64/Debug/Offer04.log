@@ -1,0 +1,6 @@
+﻿  Offer04.cpp
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\offer04\offer04.cpp(30): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\offer04\offer04.cpp(31): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\offer04\offer04.cpp(63): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\offer04\offer04.cpp(64): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  Offer04.vcxproj -> E:\Personal\Code\CPP\c++demo\剑指offer第二版\OfferEdition2\x64\Debug\Offer04.exe

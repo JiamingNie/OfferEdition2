@@ -1,0 +1,3 @@
+﻿  Offer40.cpp
+e:\personal\code\cpp\c++demo\剑指offer第二版\offeredition2\offer40\offer40.cpp(44): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  Offer40.vcxproj -> E:\Personal\Code\CPP\c++demo\剑指offer第二版\OfferEdition2\x64\Debug\Offer40.exe
